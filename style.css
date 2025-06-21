@@ -1,0 +1,281 @@
+/* style.css */
+
+/* Import elegant fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff !important;
+    color: #1a1a1a !important;
+    line-height: 1.6;
+}
+
+/* Main content area */
+.main .block-container {
+    padding: 2rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+/* Headers */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #1a1a1a;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+/* Agent Response Cards */
+[data-testid="stVerticalBlock"] .stMarkdown {
+    background-color: #f8f8f8;
+    border-radius: 0;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+[data-testid="stVerticalBlock"] .stMarkdown:hover {
+    transform: translateY(-2px);
+}
+
+/* Agent Headers */
+[data-testid="stVerticalBlock"] .stMarkdown strong {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Agent Content */
+[data-testid="stVerticalBlock"] .stMarkdown p {
+    color: #333333;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+/* Metrics and Key Points */
+[data-testid="stVerticalBlock"] .stMarkdown blockquote {
+    background-color: #ffffff;
+    border-left: 2px solid #4a6741;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+}
+
+/* Input Elements */
+.stTextInput > div > div > input {
+    background-color: #ffffff !important;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 0 !important;
+    color: #1a1a1a !important;
+    font-size: 1rem !important;
+    padding: 1rem !important;
+    transition: border-color 0.2s ease;
+}
+
+.stTextInput > div > div > input:focus {
+    border-color: #4a6741 !important;
+    box-shadow: none !important;
+}
+
+/* Buttons */
+.stButton > button {
+    background-color: #4a6741 !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0.75rem 2rem !important;
+    font-weight: 400 !important;
+    font-size: 1rem !important;
+    letter-spacing: 0.5px !important;
+    transition: background-color 0.2s ease !important;
+    text-transform: none !important;
+}
+
+.stButton > button:hover {
+    background-color: #3d5635 !important;
+    transform: none;
+}
+
+/* Data Display */
+.dataframe {
+    background-color: #ffffff !important;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 0 !important;
+}
+
+.dataframe th {
+    background-color: #f8f8f8 !important;
+    color: #1a1a1a !important;
+    font-weight: 500 !important;
+    padding: 1rem !important;
+    text-align: left !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+.dataframe td {
+    padding: 1rem !important;
+    border-top: 1px solid #e0e0e0 !important;
+    color: #333333 !important;
+}
+
+/* Metrics */
+.stMetric {
+    background-color: #f8f8f8 !important;
+    border: none !important;
+    padding: 2rem !important;
+    text-align: center !important;
+}
+
+.stMetric label {
+    color: #1a1a1a !important;
+    font-family: 'Playfair Display', serif !important;
+    font-size: 1.2rem !important;
+    font-weight: 500 !important;
+}
+
+/* Select Box */
+.stSelectbox > div > div {
+    background-color: #ffffff !important;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 0 !important;
+    color: #1a1a1a !important;
+}
+
+/* Sidebar */
+.sidebar .sidebar-content {
+    background-color: #f8f8f8 !important;
+    padding: 2rem !important;
+    border-right: 1px solid #e0e0e0;
+}
+
+/* Links */
+a {
+    color: #4a6741 !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid transparent !important;
+    transition: border-color 0.2s ease !important;
+}
+
+a:hover {
+    border-color: #4a6741 !important;
+}
+
+/* Custom Classes for Agent Responses */
+.agent-response {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.agent-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.agent-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Highlight Important Information */
+.highlight-info {
+    background-color: #f8f8f8;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #1a1a1a;
+}
+
+/* Status Tags */
+.status-tag {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-right: 0.5rem;
+    background-color: #f8f8f8;
+    color: #4a6741;
+    letter-spacing: 0.5px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f8f8f8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e0e0e0;
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #cccccc;
+}
+
+/* Italicized Text */
+.elegant-italic {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+/* Image Styling */
+.stImage {
+    margin: 2rem 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+} 
+
+.agent2-body .agent2-text {
+    font-size: 0.9rem;
+    line-height: 1.45;
+    white-space: pre-wrap;
+}
+.agent2-body .agent2-text h1,
+.agent2-body .agent2-text h2,
+.agent2-body .agent2-text h3 {
+    font-size: 1.05rem;
+    margin-top: 0.6rem;
+    color: #9f7aea;
+}
+.agent2-body .agent2-text ul {
+    padding-left: 1.2rem;
+    margin: 0.4rem 0;
+} 
