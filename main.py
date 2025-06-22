@@ -900,8 +900,8 @@ WHALE PATTERN DATA:
 
 Generate forecasts for BOTH timeframes using the provided data:
 
-1. SHORT-TERM (1-4 weeks): Based on the MCP technical data above
-2. LONG-TERM (3-12 months): Based on the whale patterns above
+1. SHORT-TERM (1-4 days): Based on the MCP technical data above
+2. LONG-TERM (3-12 weeks): Based on the whale patterns above
 
 Provide percentage predictions in JSON format:
 {{
